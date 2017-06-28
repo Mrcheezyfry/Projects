@@ -1,0 +1,28 @@
+h1 {
+    color:red;
+}
+table {
+    font-family:arial;
+    border-collapse: collapse;
+    border-width: medium
+    
+}
+td,th {
+    border: 4px solid;
+    font-family:georgia;
+}
+ul {
+    background-color:yellow;
+}
+.bold{
+    font-weight:bold;
+}
+.orange{
+    background-color:orange;
+}
+.red{
+    background-color:red;
+}
+a {
+    color: green;
+}
