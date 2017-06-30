@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type= "text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<title>Calculator</title>
+    </head>
+    <body>
+        <h1>Calculator</h1>
+        <p>Number 1:<input type="text" name="input1"/></p><p>Number 2:<input type="text" name="input2"/></p>
+        <input type="radio" name="funct" value=1>+<input type="radio" name="funct" value=2>-<input type="radio" name="funct" value=3>*<input type="radio" name="funct" value=4>%
+        <br><button type="button" onclick="calculate()">Submit</button>
+        <p>Answer:<span></span></p>
+        
+        
+        
+        
+        <script>
+        var num1;
+        var num2;
+        var funct;
+        var ans;
+        function calculate() {
+            num1=parseFloat($('input:text[name=input1]').val());
+            num2=parseFloat($('input:text[name=input2]').val());
+            funct=parseInt($('input[name="funct"]:checked').val());
+            
+            switch(funct){
+                case 1:
+                ans=num1+num2;
+                break;
+                case 2:
+                ans=num1-num2;
+                break;
+                case 3:
+                ans=num1*num2;
+                break;
+                case 4:
+                ans=num1/num2;
+                break;
+            }
+          
+               $("span").html(ans);
+       }
+    
+        
+        </script>
+    </body>
+</html>

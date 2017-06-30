@@ -1,0 +1,23 @@
+h1 {
+    text-align: center
+}
+body {
+    background-color:green;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+#easy {
+  width: 100px;
+  height: 50px;
+  border-radius: 150px;
+  border-color: black;
+  background-color: Green;
+  font-size: 20px;
+  color: white;
+}

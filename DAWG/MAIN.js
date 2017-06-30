@@ -1,6 +1,6 @@
 /* global $*/ /* global inputText */
-document.getElementById('go').onclick - function () {
+document.getElementById('go').onclick = function () {
    var inputText = $('#text-input').val(); 
-   var dawgifiedText = inputText + ", dawg";
+   var dawgifiedText = "Hello, " + inputText;
    document.getElementById('output').innerHTML = dawgifiedText;
 };
